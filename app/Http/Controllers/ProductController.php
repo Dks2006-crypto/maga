@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -12,7 +11,6 @@ class ProductController extends Controller
         $products = Product::where('is_active', true)->get();
         return view('page.products', [
             'titlePage' => 'Продукция',
-            'products' => $products,
-        ]);
+            'products' => $products,        ]);
     }
 }

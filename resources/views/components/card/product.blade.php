@@ -1,7 +1,7 @@
 @props(['product'])
 
 <div class="card" style="width: 18rem;">
-    <img height="230" src="{{ asset('/storage/images/prod/', $product->image) }}" class="card-img-top" alt="{{ $product->name }}"
+    <img height="230" src="{{ url ('storage', $product->image) }}" class="card-img-top" alt="{{ $product->name }}"
         style="object-fit: cover; object-position: center;">
     <div class="card-body">
         <h5 class="card-title">{{ $product->name }}</h5>
